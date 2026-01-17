@@ -21,8 +21,8 @@ ESP32 NetProbe is a passive network monitoring device that listens on TCP ports 
 
 | Version | Features | Hardware Required | Documentation |
 |---------|----------|-----------------|---------------|
-| **Core** | JSON logging, Slow Loris detection, text extraction | ESP32 only | [Core Docs](docs/core.md) |
-| **OLED** | All Core features + real-time display, encoder navigation | ESP32 + SSD1306 + KY-040 | [OLED Docs](docs/oled.md) |
+| **[Core](firmware/core.ino)** | JSON logging, Slow Loris detection, text extraction | ESP32 only | [Core Docs](docs/core.md) |
+| **[Oled](firmware/oled.ino)** | All Core features + real-time display, encoder navigation | ESP32 + SSD1306 + KY-040 | [OLED Docs](docs/oled.md) |
 
 ---
 
