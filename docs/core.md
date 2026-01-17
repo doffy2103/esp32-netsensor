@@ -37,9 +37,9 @@ const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
 ```
 
-📤 Upload the sketch to your ESP32
+3. 📤 Upload the sketch to your ESP32
 
-📟 Open Serial Monitor at 115200 baud to view JSON logs
+4. 📟 Open Serial Monitor at 115200 baud to view JSON logs
 
 ⚙️ Configuration: 
 ```
