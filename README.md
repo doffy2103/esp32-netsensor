@@ -74,11 +74,9 @@ echo "Hello ESP32" | nc 192.168.1.100 2323
 
 📟 Expected Output on OLED
 After sending a message, the OLED will display:
-
-┌─────────────────────────┐
-│      TCP MONITOR        │
-├─────────────────────────┤
-│ CONNECT 192.168.1.50    │
-│ Hello ESP32             │
-│ CLOSE                   │
-└─────────────────────────┘
+```        
+TCP MONITOR  
+CONNECT 192.168.1.50   
+Hello ESP32             
+CLOSE                  
+```
