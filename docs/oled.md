@@ -35,7 +35,7 @@ This firmware extends the Core firmware with a real-time display using an SSD130
 
 ## 🚀 **Usage**  
 1. 🔌 Connect OLED and optional encoder to the ESP32  
-2. 💻 Open the `.cpp` file in Arduino IDE  
+2. 💻 Open the `.ino` file in Arduino IDE  
 3. 🔐 Set Wi-Fi credentials at the top of the code:  
 
 ```cpp
