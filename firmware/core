@@ -98,7 +98,7 @@ void handle_client(WiFiClient& client) {
             Serial.println();
         }
 
-        // FLAG_DROP_DATA = пассивный сенсор, ничего не отправляем
+        // FLAG_DROP_DATA = passive sensor
     }
 
     unsigned long duration = millis() - start;
