@@ -1,0 +1,24 @@
+# Arduino build files
+/build/
+/*.pioenvs/
+/*.pio/
+/*.tmp/
+/*.elf
+*.bin
+*.hex
+*.eep
+*.map
+*.elf
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# Arduino specific
+*.ino.sublime-workspace
+*.ino.sublime-project
