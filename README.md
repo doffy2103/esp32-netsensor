@@ -1,4 +1,4 @@
-# ESP32 NetProbe 🔍
+# ESP32 Netsensor 🔍
 
 <div align="center">
 
