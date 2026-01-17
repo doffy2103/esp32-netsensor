@@ -13,7 +13,7 @@
 
 ## 📌 What is this?
 
-ESP32 NetProbe is a passive network monitoring device that listens on TCP ports without responding to clients. Designed for cybersecurity education and network behavior analysis.
+ESP32 Netsensor is a passive network monitoring device that listens on TCP ports without responding to clients. Designed for cybersecurity education and network behavior analysis.
 
 ---
 
