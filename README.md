@@ -17,27 +17,28 @@ ESP32 NetProbe is a passive network monitoring device that listens on TCP ports 
 
 ---
 
-## 🎯 Two Firmware Versions
+## 🎯 Firmware Versions
 
-| Version | Features | Hardware Required |
-|---------|----------|-------------------|
-| **Core** | JSON logging, Slow Loris detection, text extraction | ESP32 only |
-| **OLED** | All Core features + real-time display, encoder navigation | ESP32 + SSD1306 + KY-040 |
+| Version | Features | Hardware Required | Documentation |
+|---------|----------|-----------------|---------------|
+| **Core** | JSON logging, Slow Loris detection, text extraction | ESP32 only | [Core Docs](docs/core.md) |
+| **OLED** | All Core features + real-time display, encoder navigation | ESP32 + SSD1306 + KY-040 | [OLED Docs](docs/oled.md) |
 
 ---
 
 ## 🚀 Quick Setup
 
+For full setup instructions, see [Setup Guide](docs/setup.md)
+
 ### 1. **Prerequisites**
-- Install [Arduino IDE](https://www.arduino.cc/en/software)
-- Add ESP32 board support via Boards Manager
-- For OLED version: Install `Adafruit SSD1306` and `Adafruit GFX` libraries
+- Arduino IDE
+- ESP32 board support
+- For OLED: Adafruit SSD1306 + GFX libraries
 
 ### 2. **Configure Wi-Fi**
-Edit this in the `.ino` file:
+Edit this in your `.ino` file:
 
 ```cpp
-// ADD THIS AT THE TOP OF THE FILE
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
 ```
