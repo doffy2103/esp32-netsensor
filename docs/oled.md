@@ -38,11 +38,14 @@ const char* password = "YOUR_WIFI_PASSWORD";
 - **TCP Commands Examples** -  
 
 💻 **Windows (PowerShell)**  
+# Connect to ESP32 on port 2323  
 $tcp = New-Object System.Net.Sockets.TcpClient("192.168.1.100", 2323)  
 $stream = $tcp.GetStream()  
 $writer = New-Object System.IO.StreamWriter($stream)  
+# Send a message  
 $writer.WriteLine("Hello ESP32")  
 $writer.Flush()  
+# Close connection  
 $tcp.Close()  
 
 🐧 **Linux / macOS**  
@@ -60,4 +63,5 @@ TCP MONITOR
 CONNECT 192.168.1.50  
 Hello ESP32  
 CLOSE
+
 
