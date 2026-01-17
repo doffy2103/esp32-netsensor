@@ -37,15 +37,19 @@ This firmware extends the Core firmware with a real-time display using an SSD130
 1. 🔌 Connect OLED and optional encoder to the ESP32  
 2. 💻 Open the `.cpp` file in Arduino IDE  
 3. 🔐 Set Wi-Fi credentials at the top of the code:  
+
 ```cpp
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
 ```
+
 📤 Upload the sketch to your ESP32
 
 📟 Open Serial Monitor at 115200 baud if you want to see JSON logs
 
 👁️ Logs will appear on the OLED display automatically
+
+
 
 💻 TCP Commands Examples: 
 
@@ -67,3 +71,14 @@ Termux(Android):
 ```
 echo "Hello ESP32" | nc 192.168.1.100 2323
 ```
+
+📟 Expected Output on OLED
+After sending a message, the OLED will display:
+
+┌─────────────────────────┐
+│      TCP MONITOR        │
+├─────────────────────────┤
+│ CONNECT 192.168.1.50    │
+│ Hello ESP32             │
+│ CLOSE                   │
+└─────────────────────────┘
