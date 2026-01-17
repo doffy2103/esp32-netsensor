@@ -36,29 +36,22 @@ const char* password = "YOUR_WIFI_PASSWORD";
 6. Logs will appear on the OLED display automatically.  
 
 - **TCP Commands Examples** -  
-You can test the device by sending simple TCP messages to the ESP32 IP on the configured port (default 2323).
 
-💻 Windows (PowerShell):  
-# Connect to ESP32 IP on port 2323  
+💻 **Windows (PowerShell)**  
 $tcp = New-Object System.Net.Sockets.TcpClient("192.168.1.100", 2323)  
 $stream = $tcp.GetStream()  
 $writer = New-Object System.IO.StreamWriter($stream)  
-# Send a message  
 $writer.WriteLine("Hello ESP32")  
 $writer.Flush()  
-# Close connection  
 $tcp.Close()  
-# Replace "192.168.1.100" with your ESP32 IP displayed on OLED  
 
-🐧 Linux / macOS Terminal:  
-# Using netcat to send a message to ESP32  
+🐧 **Linux / macOS**  
 echo "Hello ESP32" | nc 192.168.1.100 2323  
-# Replace 192.168.1.100 with your ESP32 IP displayed on OLED  
 
-🤖 Termux (Android Terminal):  
-# Using netcat to send a message to ESP32  
+🤖 **Termux (Android)**  
 echo "Hello ESP32" | nc 192.168.1.100 2323  
-# Replace 192.168.1.100 with your ESP32 IP displayed in Serial Monitor  
+
+> ⚠ Replace `192.168.1.100` with your ESP32 IP as shown on the OLED display.  
 
 - **Expected Output on OLED** -  
 After sending a message, the OLED will display:  
@@ -67,3 +60,4 @@ TCP MONITOR
 CONNECT 192.168.1.50  
 Hello ESP32  
 CLOSE
+
