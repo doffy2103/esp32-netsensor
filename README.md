@@ -40,7 +40,7 @@ Edit this in the `.ino` file:
 // ADD THIS AT THE TOP OF THE FILE
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
-
+```
 
 ## License
 
