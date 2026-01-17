@@ -40,7 +40,7 @@ This firmware extends the Core firmware with a real-time display using an SSD130
 ```cpp
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_WIFI_PASSWORD";
-
+```
 📤 Upload the sketch to your ESP32
 
 📟 Open Serial Monitor at 115200 baud if you want to see JSON logs
